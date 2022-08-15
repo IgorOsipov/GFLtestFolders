@@ -1,10 +1,10 @@
 ﻿@model FolderDirectoryVM
 @{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Folders";
 }
 
 <div>
-    <h2>Folder - @Model.PathText</h2>
+    <h1>Folder - @Model.PathText</h1>
     @foreach (var item in Model.FolderDirectories)
     {
         var specSign = string.IsNullOrEmpty(Model.PathUrl) ? "" : "/";
